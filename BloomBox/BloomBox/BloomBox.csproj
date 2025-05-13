@@ -16,4 +16,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\nejla\source\repos\Grupa6-Tim4\BloomBox\BloomBox\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\nejla\source\repos\Grupa6-Tim4\BloomBox\BloomBox\.editorconfig" />
+  </ItemGroup>
+
 </Project>
