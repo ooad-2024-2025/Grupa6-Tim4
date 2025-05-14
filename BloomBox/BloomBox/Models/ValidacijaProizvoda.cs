@@ -7,5 +7,6 @@ namespace BloomBox.Models
         public int validacijaProizvodaId { get; set; }
         public Boolean status {  get; set; }
         public int stanjeProizvoda { get; set; }
+        public ValidacijaProizvoda() { }
     }
 }

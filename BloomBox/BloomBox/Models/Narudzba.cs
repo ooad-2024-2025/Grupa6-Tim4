@@ -11,6 +11,7 @@ namespace BloomBox.Models
     public String adresaDostave { get; set; }
     public Double ukupnaCijena { get; set; }
 
+    public Narudzba() { }
 
 
 }

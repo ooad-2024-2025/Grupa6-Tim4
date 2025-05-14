@@ -11,5 +11,6 @@ namespace BloomBox.Models
         [ForeignKey("Narudzba")]
         public int narudzbaId { get; set; }
         public int kolicina {  get; set; }
+        public ProizvodKorpa() { }
     }
 }

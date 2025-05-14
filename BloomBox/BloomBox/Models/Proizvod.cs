@@ -13,6 +13,7 @@ namespace BloomBox.Models
         public String slikaURL { get; set; }
         public String opis { get; set; }
         public int kolicinaNaStanju { get; set; }
+        public Proizvod() { }
 
 
     }

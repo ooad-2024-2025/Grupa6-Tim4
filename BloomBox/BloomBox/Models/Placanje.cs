@@ -11,5 +11,6 @@ namespace BloomBox.Models
         public DateTime datum {  get; set; }
         public Status status { get; set; }
         public String transakcijskiId { get; set; }
+        public Placanje() { }
     }
 }

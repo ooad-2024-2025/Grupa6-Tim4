@@ -11,6 +11,7 @@ namespace BloomBox.Models
         public String adresa { get; set; }
         public int postanskiBroj { get; set; }
 
+        public AdresaDostave() { }
 
     }
 }

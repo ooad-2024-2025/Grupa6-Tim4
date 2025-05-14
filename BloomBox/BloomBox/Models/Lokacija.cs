@@ -7,5 +7,6 @@ namespace BloomBox.Models
         public int lokacijaId { get; set; }
         public String lokacijaKorisnikaURL { get; set; }
         public String lokacijaURL { get; set; }
+        public Lokacija() { }
     }
 }

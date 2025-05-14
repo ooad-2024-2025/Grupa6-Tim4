@@ -7,5 +7,6 @@ namespace BloomBox.Models
         [Key]
         public int parametarId { get; set; }
         public String ime { get; set; }
+        public Parametri() { }
     }
 }

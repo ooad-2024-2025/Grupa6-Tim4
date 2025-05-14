@@ -11,5 +11,6 @@ namespace BloomBox.Models
         public String parametar { get; set; }
         [ForeignKey("Proizvod")]
         public int proizvodId { get; set; }
+        public Personalizacija() { }
     }
 }
