@@ -1,0 +1,63 @@
+﻿@model BloomBox.Models.Proizvod
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Proizvod</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ime" class="control-label"></label>
+                <input asp-for="ime" class="form-control" />
+                <span asp-validation-for="ime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cijena" class="control-label"></label>
+                <input asp-for="cijena" class="form-control" />
+                <span asp-validation-for="cijena" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="uvodznikId" class="control-label"></label>
+                <input asp-for="uvodznikId" class="form-control" />
+                <span asp-validation-for="uvodznikId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="kategorija" class="control-label"></label>
+                <select asp-for="kategorija" class="form-control"></select>
+                <span asp-validation-for="kategorija" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="slikaURL" class="control-label"></label>
+                <input asp-for="slikaURL" class="form-control" />
+                <span asp-validation-for="slikaURL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="opis" class="control-label"></label>
+                <input asp-for="opis" class="form-control" />
+                <span asp-validation-for="opis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="kolicinaNaStanju" class="control-label"></label>
+                <input asp-for="kolicinaNaStanju" class="form-control" />
+                <span asp-validation-for="kolicinaNaStanju" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

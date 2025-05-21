@@ -1,0 +1,36 @@
+﻿@model BloomBox.Models.Narudzba
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Narudzba</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.datum)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.datum)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.adresaDostave)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.adresaDostave)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ukupnaCijena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ukupnaCijena)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.narudzbaId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

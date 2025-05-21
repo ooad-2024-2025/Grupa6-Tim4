@@ -32,12 +32,192 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/AdresaDostave/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRyZXNhRG9zdGF2ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/AdresaDostave/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRyZXNhRG9zdGF2ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/AdresaDostave/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRyZXNhRG9zdGF2ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/AdresaDostave/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRyZXNhRG9zdGF2ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/AdresaDostave/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRyZXNhRG9zdGF2ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Lokacija/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Lokacija/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Lokacija/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Lokacija/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Lokacija/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Narudzba/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFydWR6YmFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Narudzba/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFydWR6YmFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Narudzba/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFydWR6YmFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Narudzba/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFydWR6YmFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Narudzba/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFydWR6YmFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Parametri/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyYW1ldHJpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Parametri/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyYW1ldHJpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Parametri/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyYW1ldHJpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Parametri/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyYW1ldHJpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Parametri/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyYW1ldHJpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Personalizacija/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxpemFjaWphXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Personalizacija/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxpemFjaWphXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Personalizacija/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxpemFjaWphXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Personalizacija/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxpemFjaWphXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Personalizacija/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxpemFjaWphXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Placanje/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2FuamVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Placanje/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2FuamVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Placanje/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2FuamVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Placanje/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2FuamVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Placanje/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2FuamVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ProizvodKorpa/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RLb3JwYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ProizvodKorpa/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RLb3JwYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ProizvodKorpa/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RLb3JwYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ProizvodKorpa/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RLb3JwYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ProizvodKorpa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RLb3JwYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ProizvodParametri/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RQYXJhbWV0cmlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ProizvodParametri/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RQYXJhbWV0cmlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ProizvodParametri/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RQYXJhbWV0cmlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ProizvodParametri/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RQYXJhbWV0cmlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ProizvodParametri/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RQYXJhbWV0cmlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Proizvod/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Proizvod/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Proizvod/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Proizvod/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Proizvod/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvaXp2b2RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Shared/Error.cshtml]
@@ -50,6 +230,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ValidacijaProizvoda/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsaWRhY2lqYVByb2l6dm9kYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ValidacijaProizvoda/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsaWRhY2lqYVByb2l6dm9kYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ValidacijaProizvoda/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsaWRhY2lqYVByb2l6dm9kYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ValidacijaProizvoda/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsaWRhY2lqYVByb2l6dm9kYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/ValidacijaProizvoda/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsaWRhY2lqYVByb2l6dm9kYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nejla/source/repos/Grupa6-Tim4/BloomBox/BloomBox/Views/_ViewImports.cshtml]

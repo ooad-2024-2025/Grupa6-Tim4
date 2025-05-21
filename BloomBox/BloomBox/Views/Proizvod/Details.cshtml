@@ -1,0 +1,60 @@
+﻿@model BloomBox.Models.Proizvod
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Proizvod</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cijena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cijena)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.uvodznikId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.uvodznikId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.kategorija)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.kategorija)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.slikaURL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.slikaURL)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.opis)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.opis)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.kolicinaNaStanju)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.kolicinaNaStanju)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.proizvodId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
