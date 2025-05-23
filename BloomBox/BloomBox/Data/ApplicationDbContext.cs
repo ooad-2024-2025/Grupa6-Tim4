@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BloomBox.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<Korisnik>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -21,6 +21,7 @@ namespace BloomBox.Data
         public DbSet<ProizvodKorpa> ProizvodKorpa { get; set; }
         public DbSet<ProizvodParametri> ProizvodParametri { get; set; }
         public DbSet<ValidacijaProizvoda> ValidacijaProizvoda { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AdresaDostave>().ToTable("AdresaDostave");

@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BloomBox")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9aaa8f910e2937586cf9835e9b8c44a9ceeb3899")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cae5037e03c44cd4ffafe6b7688f8e535d7a5f67")]
 [assembly: System.Reflection.AssemblyProductAttribute("BloomBox")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BloomBox")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

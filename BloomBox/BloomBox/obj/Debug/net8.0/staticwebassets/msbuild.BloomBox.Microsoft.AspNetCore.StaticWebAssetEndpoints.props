@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
     <StaticWebAssetEndpoint Include="_content/BloomBox/BloomBox.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BloomBox.vuz9r0tpjs.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BloomBox.rzifwle6ji.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Odd4Qi/atf24WAFwknawOqZUDu\u002Bk726oNtCG45/fROQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Odd4Qi/atf24WAFwknawOqZUDu\u002Bk726oNtCG45/fROQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 16 Apr 2025 15:06:08 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp\u002BioqubtW8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp\u002BioqubtW8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 23 May 2025 20:36:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BloomBox/BloomBox.vuz9r0tpjs.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BloomBox.vuz9r0tpjs.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/BloomBox/BloomBox.rzifwle6ji.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BloomBox.rzifwle6ji.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vuz9r0tpjs"},{"Name":"integrity","Value":"sha256-Odd4Qi/atf24WAFwknawOqZUDu\u002Bk726oNtCG45/fROQ="},{"Name":"label","Value":"_content/BloomBox/BloomBox.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Odd4Qi/atf24WAFwknawOqZUDu\u002Bk726oNtCG45/fROQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 16 Apr 2025 15:06:08 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rzifwle6ji"},{"Name":"integrity","Value":"sha256-Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp\u002BioqubtW8="},{"Name":"label","Value":"_content/BloomBox/BloomBox.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp\u002BioqubtW8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 23 May 2025 20:36:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BloomBox/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

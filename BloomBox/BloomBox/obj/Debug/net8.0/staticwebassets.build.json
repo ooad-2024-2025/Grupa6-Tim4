@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FVYivhNbMdhxm+a4U9Anys3KT6j9xAFyys9yhEtG0mM=",
+  "Hash": "bffzpDBpMBD6/oqVwIaTbP4dVgBKrcpXkr23l+74M9U=",
   "Source": "BloomBox",
   "BasePath": "_content/BloomBox",
   "Mode": "Default",
@@ -1291,8 +1291,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "vuz9r0tpjs",
-      "Integrity": "Odd4Qi/atf24WAFwknawOqZUDu+k726oNtCG45/fROQ=",
+      "Fingerprint": "rzifwle6ji",
+      "Integrity": "Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp+ioqubtW8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\nejla\\source\\repos\\Grupa6-Tim4\\BloomBox\\BloomBox\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BloomBox.styles.css"
@@ -1312,8 +1312,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "vuz9r0tpjs",
-      "Integrity": "Odd4Qi/atf24WAFwknawOqZUDu+k726oNtCG45/fROQ=",
+      "Fingerprint": "rzifwle6ji",
+      "Integrity": "Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp+ioqubtW8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\nejla\\source\\repos\\Grupa6-Tim4\\BloomBox\\BloomBox\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BloomBox.bundle.scp.css"
@@ -2591,7 +2591,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1126"
+          "Value": "1130"
         },
         {
           "Name": "Content-Type",
@@ -2599,11 +2599,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Odd4Qi/atf24WAFwknawOqZUDu+k726oNtCG45/fROQ=\""
+          "Value": "\"Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp+ioqubtW8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 15:06:08 GMT"
+          "Value": "Fri, 23 May 2025 20:36:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2613,7 +2613,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Odd4Qi/atf24WAFwknawOqZUDu+k726oNtCG45/fROQ="
+          "Value": "sha256-Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp+ioqubtW8="
+        }
+      ]
+    },
+    {
+      "Route": "BloomBox.rzifwle6ji.bundle.scp.css",
+      "AssetFile": "C:\\Users\\nejla\\source\\repos\\Grupa6-Tim4\\BloomBox\\BloomBox\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BloomBox.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1130"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp+ioqubtW8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 20:36:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rzifwle6ji"
+        },
+        {
+          "Name": "label",
+          "Value": "BloomBox.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp+ioqubtW8="
+        }
+      ]
+    },
+    {
+      "Route": "BloomBox.rzifwle6ji.styles.css",
+      "AssetFile": "C:\\Users\\nejla\\source\\repos\\Grupa6-Tim4\\BloomBox\\BloomBox\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BloomBox.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1130"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp+ioqubtW8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 20:36:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rzifwle6ji"
+        },
+        {
+          "Name": "label",
+          "Value": "BloomBox.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp+ioqubtW8="
         }
       ]
     },
@@ -2628,7 +2718,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1126"
+          "Value": "1130"
         },
         {
           "Name": "Content-Type",
@@ -2636,11 +2726,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Odd4Qi/atf24WAFwknawOqZUDu+k726oNtCG45/fROQ=\""
+          "Value": "\"Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp+ioqubtW8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 15:06:08 GMT"
+          "Value": "Fri, 23 May 2025 20:36:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2650,97 +2740,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Odd4Qi/atf24WAFwknawOqZUDu+k726oNtCG45/fROQ="
-        }
-      ]
-    },
-    {
-      "Route": "BloomBox.vuz9r0tpjs.bundle.scp.css",
-      "AssetFile": "C:\\Users\\nejla\\source\\repos\\Grupa6-Tim4\\BloomBox\\BloomBox\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BloomBox.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1126"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Odd4Qi/atf24WAFwknawOqZUDu+k726oNtCG45/fROQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 15:06:08 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vuz9r0tpjs"
-        },
-        {
-          "Name": "label",
-          "Value": "BloomBox.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Odd4Qi/atf24WAFwknawOqZUDu+k726oNtCG45/fROQ="
-        }
-      ]
-    },
-    {
-      "Route": "BloomBox.vuz9r0tpjs.styles.css",
-      "AssetFile": "C:\\Users\\nejla\\source\\repos\\Grupa6-Tim4\\BloomBox\\BloomBox\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BloomBox.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1126"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Odd4Qi/atf24WAFwknawOqZUDu+k726oNtCG45/fROQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 15:06:08 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vuz9r0tpjs"
-        },
-        {
-          "Name": "label",
-          "Value": "BloomBox.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Odd4Qi/atf24WAFwknawOqZUDu+k726oNtCG45/fROQ="
+          "Value": "sha256-Gf49u6yIq3nyW727SxbXdzmh5ylxtBzIsp+ioqubtW8="
         }
       ]
     },
