@@ -1,0 +1,152 @@
+﻿@model IEnumerable<BloomBox.Models.ProizvodKorpa>
+
+@{
+    ViewData["Title"] = "Korpa";
+    var ukupnaCijena = ViewBag.UkupnaCijena as double? ?? 0.0;
+}
+
+@if (User.IsInRole("Administrator") || User.IsInRole("Radnik"))
+{
+    <h1 class="mb-4 text-left" style="color: #1c1418;">Pregled korpi</h1>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover shadow-sm" style="background-color: #fffafc; border-radius: 15px;">
+            <thead class="table-light" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                <tr>
+                    <th>Kupac</th>
+                    <th>Proizvod</th>
+                    <th>Količina</th>
+                    <th>Akcije</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                        <tr>
+                        <td>@(item.Kupac != null ? item.Kupac.UserName : "Gost")</td>
+                        <td>@item.Proizvod.ime</td>
+                        <td>@item.kolicina</td>
+                        <td>
+                            <a asp-controller="Proizvod" asp-action="Details" asp-route-id="@item.proizvodId" class="btn btn-sm btn-outline-primary me-2">
+                                Detalji
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.proizvodKorpaId" class="btn btn-sm btn-outline-danger">
+                                Obriši
+                            </a>
+                        </td>
+         
+                       </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info text-center">
+        <h4>Vaša korpa je prazna.</h4>
+        <p>Dodajte proizvode kako biste nastavili s kupovinom.</p>
+        <a href="@Url.Action("Index", "Proizvod")" class="btn btn-primary mt-2">Pogledaj proizvode</a>
+    </div>
+}
+else
+{
+<h1 class="mb-4">Vaša korpa</h1>
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                @foreach (var item in Model)
+                {
+
+                                    <div class="col">
+                                        <div class="card h-100 shadow-sm position-relative">
+                                            <!-- Delete (X) Button -->
+                                            <form asp-action="Delete" asp-route-id="@item.proizvodKorpaId"
+                                                method="post"
+                                      class="position-absolute top-0 end-0 m-2">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="btn-close" aria-label="Ukloni" title="Ukloni iz korpe"></button>
+                                            </form>
+
+                                            <img src="@item.Proizvod.slikaURL" class="card-img-top" style="object-fit: cover; height: 200px;" alt="Slika proizvoda">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">@item.Proizvod.ime</h5>
+                                                <p class="card-text">Količina: @item.kolicina</p>
+                                                <p class="card-text">Cijena: @(item.Proizvod.cijena* item.kolicina) KM</p>
+
+                                                <div class="mt-auto">
+                                        <a asp-controller="Proizvod" asp-action="Details" asp-route-id="@item.proizvodId" class="custom-button">Detalji</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card sticky-top">
+                <div class="card-body">
+                    <h4 class="card-title">Ukupna cijena</h4>
+                    <p class="card-text display-6">@ViewBag.UkupnaCijena.ToString("0.00") KM</p>
+                        <button type="button" class="custom-button"
+                            onclick="window.location.href='@Url.Action("Create", "Narudzba")'">
+                        Nastavi kupovinu
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<style>
+    .custom-button {
+        background-color: #1c1418;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .custom-button:hover {
+            background-color: #3a2b31;
+            color: #f0f0f0;
+        }
+
+        .custom-button:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+    .btn-outline-primary {
+        border-color: #e8a5b4;
+        color: #e8a5b4;
+    }
+
+        .btn-outline-primary:hover {
+            background-color: #e8a5b4;
+            color: white;
+        }
+
+    .btn-outline-danger {
+        border-color: #f08080;
+        color: #f08080;
+    }
+
+        .btn-outline-danger:hover {
+            background-color: #f08080;
+            color: white;
+        }
+
+    .table th, .table td {
+        vertical-align: middle;
+    }
+
+</style>
+

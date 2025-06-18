@@ -1,0 +1,40 @@
+﻿@model BloomBox.Models.Narudzba
+
+@{
+    ViewData["Title"] = "Detalji narudžbe";
+}
+
+<a asp-action="Index" class="btn btn-outline-secondary mb-4">← Nazad na listu</a>
+
+<div class="card shadow-sm p-4" style="border-radius: 20px; background-color: #fffafc;">
+    <h2 class="mb-3 text-left" style="color:#1c1418;">Detalji narudžbe #@Model.narudzbaId</h2>
+
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <h5 class="text-muted">Informacije o kupcu</h5>
+            <p><strong>Ime:</strong> @Model.Kupac.Ime @Model.Kupac.Prezime</p>
+            <p><strong>Email:</strong> @Model.Kupac.Email</p>
+        </div>
+        <div class="col-md-6">
+            <h5 class="text-muted">Adresa dostave</h5>
+            <p><strong>Grad:</strong> @Model.adresaDostave.grad</p>
+            <p><strong>Ulica:</strong> @Model.adresaDostave.adresa</p>
+            <p><strong>Poštanski broj:</strong> @Model.adresaDostave.postanskiBroj</p>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <h5 class="text-muted">Podaci o narudžbi</h5>
+        <p><strong>Datum narudžbe:</strong> @Model.datum.ToString("dd.MM.yyyy. HH:mm")</p>
+        <p><strong>Ukupna cijena:</strong> <span >@Model.ukupnaCijena KM</span></p>
+    </div>
+
+    @if (User.IsInRole("Administrator"))
+    {
+        <div class="text-end">
+            <a asp-action="Delete" asp-route-id="@Model.narudzbaId" class="btn btn-danger">
+                Izbriši narudžbu
+            </a>
+        </div>
+    }
+</div>

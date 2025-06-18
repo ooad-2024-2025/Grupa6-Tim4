@@ -1,0 +1,196 @@
+﻿@model BloomBox.Models.Narudzba
+@{
+    ViewData["Title"] = "Create";
+}
+<style>
+    .checkout-container {
+        display: flex;
+        max-width: 1200px;
+        margin: 40px auto;
+        gap: 30px;
+        font-family: Arial, sans-serif;
+    }
+
+    .cart-summary {
+        flex: 1;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        height: fit-content;
+    }
+
+        .cart-summary h3 {
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #b30059;
+            padding-bottom: 10px;
+        }
+
+    .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+
+    .item-info {
+        flex: 1;
+    }
+
+    .item-name {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .item-quantity {
+        color: #666;
+        font-size: 0.9em;
+    }
+
+    .item-price {
+        font-weight: bold;
+        color: #b30059;
+    }
+
+    .total-section {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 2px solid #b30059;
+        text-align: right;
+    }
+
+    .total-amount {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #b30059;
+    }
+
+    .forma-narudzba {
+        flex: 1;
+        padding: 30px;
+        background-color: #f9f9f9;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+        .forma-narudzba h3 {
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #b30059;
+            padding-bottom: 10px;
+        }
+
+        .forma-narudzba div {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .forma-narudzba label {
+            width: 180px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .forma-narudzba input {
+            flex: 1;
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .forma-narudzba button {
+            background-color: #b30059;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+            .forma-narudzba button:hover {
+                background-color: #8a0044;
+            }
+
+    .empty-cart {
+        text-align: center;
+        color: #666;
+        font-style: italic;
+    }
+</style>
+
+<div class="checkout-container">
+    <!-- Cart Summary Section -->
+    <div class="cart-summary">
+        <h3>Vaša narudžba</h3>
+
+        @if (ViewBag.CartItems != null && ((List<BloomBox.Controllers.NarudzbaController.ProizvodKorpaViewModel>)ViewBag.CartItems).Count > 0)
+        {
+            @foreach (var item in (List<BloomBox.Controllers.NarudzbaController.ProizvodKorpaViewModel>)ViewBag.CartItems)
+            {
+                <div class="cart-item">
+                    <div class="item-info">
+                        <div class="item-name">@item.Naziv</div>
+                        <div class="item-quantity">Količina: @item.Kolicina</div>
+                    </div>
+                    <div class="item-price">@String.Format("{0:0.00}", item.UkupnaCijena) KM</div>
+                </div>
+            }
+
+            <div class="total-section">
+                <div class="total-amount">
+                    Ukupno: @String.Format("{0:0.00}", ViewBag.UkupnaCijena) KM
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="empty-cart">
+                Vaša korpa je prazna
+            </div>
+        }
+    </div>
+
+    <!-- Order Form Section -->
+    <form asp-action="Create" asp-controller="Narudzba" method="post" class="forma-narudzba" id="checkoutForm">
+        
+        @Html.AntiForgeryToken()
+        <h3>Podaci o dostavi</h3>
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div>
+            <label asp-for="adresaDostave.grad">Grad:</label>
+            <input asp-for="adresaDostave.grad" />
+            <span asp-validation-for="adresaDostave.grad" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label asp-for="adresaDostave.adresa">Adresa:</label>
+            <input asp-for="adresaDostave.adresa" />
+            <span asp-validation-for="adresaDostave.adresa" class="text-danger"></span>
+        </div>
+
+        <div>
+            <label asp-for="adresaDostave.postanskiBroj">Poštanski broj:</label>
+            <input asp-for="adresaDostave.postanskiBroj" type="text" class="form-control" />
+            <span asp-validation-for="adresaDostave.postanskiBroj" class="text-danger"></span>
+        </div>
+
+        <button type="submit">Kreiraj narudžbu</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

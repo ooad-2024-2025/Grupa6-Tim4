@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BloomBox.Models.Narudzba>
+
+@{
+    ViewData["Title"] = "Narudžbe";
+}
+
+<h1 class="mb-4 text-left" style="color: #1c1418;">Sve narudžbe</h1>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover shadow-sm" style="background-color: #fffafc; border-radius: 15px;">
+        <thead class="table-light" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().narudzbaId)</th>
+                <th>@Html.DisplayNameFor(model => model.First().datum)</th>
+                <th>@Html.DisplayNameFor(model => model.First().ukupnaCijena)</th>
+                <th>Akcije</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.narudzbaId</td>
+                    <td>@item.datum.ToString("dd.MM.yyyy. HH:mm")</td>
+                    <td><strong>@item.ukupnaCijena KM</strong></td>
+                    <td>
+                        @if (User.IsInRole("Administrator"))
+                        {
+                            <a asp-action="Details" asp-route-id="@item.narudzbaId" class="btn btn-sm btn-outline-primary">
+                                Detalji
+                            </a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<style>
+    table.table th, table.table td {
+        vertical-align: middle;
+    }
+
+    .btn-outline-primary {
+        border-color: #e8a5b4;
+        color: #e8a5b4;
+    }
+
+        .btn-outline-primary:hover {
+            background-color: #e8a5b4;
+            color: white;
+        }
+</style>

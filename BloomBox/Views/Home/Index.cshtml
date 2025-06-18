@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Početna";
+}
+
+<style>
+    .hero-container {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        color: black;
+    }
+
+    .background-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        opacity: 0.3; /* Slightly lower opacity */
+        min-width: 100vh; /* Ensures it covers the screen even after rotation */
+        min-height: 100vw;
+        z-index: -1; /* Behind content */
+        object-fit: cover;
+        z-index: -1;
+    }
+</style>
+
+<div class="hero-container">
+    <img src="https://i.pinimg.com/736x/f8/74/de/f874de3bc195be003e3295e024c07ba3.jpg" alt="Background" class="background-image" />
+    <h1>Dobrodošli u BloomBox!</h1>
+    <p>Najljepše cvijeće na jednom mjestu!</p>
+</div>

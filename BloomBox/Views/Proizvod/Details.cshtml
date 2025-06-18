@@ -1,0 +1,157 @@
+﻿@model BloomBox.Models.Proizvod
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div class="container mt-4">
+        <a asp-action="Index" class="btn nazad-btn mb-4">← Nazad</a>
+         @if (User.IsInRole("Administrator") || User.IsInRole("Radnik")){
+               
+        <a asp-action="Edit" asp-route-id="@Model?.proizvodId" class="btn nazad-btn mb-4">Uredi</a> 
+        <a asp-action="Delete" asp-route-id="@Model?.proizvodId" class="btn nazad-btn mb-4">Izbrisi</a>
+        <a asp-action="DodajParametre" asp-route-id="@Model.proizvodId" class="btn nazad-btn mb-4">
+            Dodaj parametre
+        </a>
+         }
+        <div class="flower-card row">
+           
+       
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+            <img src="@Model.slikaURL" alt="@Model.ime" style="max-height: 400px; object-fit: cover;" />
+        </div>
+
+       
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h2 style="color: #d63384;">@Model.ime</h2>
+            <h4 class="text-muted mb-4">@Model.cijena KM</h4>
+
+                @if (!(User.IsInRole("Administrator") || User.IsInRole("Radnik"))){
+                   
+                @if (Model.kolicinaNaStanju > 0)
+                {
+                    <a asp-action="Dodaj" asp-route-id="@Model.proizvodId" class="btn btn-pink-custom">
+                        Dodaj u korpu
+                    </a>
+                }
+                else
+                {
+                    <button class="btn btn-secondary btn-lg w-100" disabled>
+                        <i class="fas fa-times"></i> Nema na stanju
+                    </button>
+                }
+                }
+                else
+                {
+                    <h4 class="text-muted mb-4">Količina: @Model.kolicinaNaStanju</h4>
+                    <h4 class="text-muted mb-4">Uvoznik: @Model.uvodznikId</h4>
+                    <h4 class="text-muted mb-4">Kategorija: @Model.kategorija</h4>
+                }
+                
+        </div>
+
+       
+        <div class="col-12">
+            <div class="divider"></div>
+        </div>
+        @if (User.IsInRole("Administrator") || User.IsInRole("Radnik"))
+        {
+            var parametri = ViewBag.Parametri as List<BloomBox.Models.Parametri>;
+
+            if (parametri != null && parametri.Any())
+            {
+                <hr />
+                <h5 class="mb-2" style="color: #444;">Parametri za ovaj proizvod:</h5>
+                <div>
+                    @foreach (var p in parametri)
+                    {
+                        <span class="chip">@p.ime</span>
+                    }
+                </div>
+            }
+            else
+            {
+                <p><em>Nema dodatih parametara za ovaj proizvod.</em></p>
+            }
+        }
+
+        <!-- Details below -->
+        <div class="col-12">
+            <h5 class="mb-2" style="color: #444;">Opis proizvoda</h5>
+            <p style="font-size: 1.1em;">@Model.opis</p>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .chip {
+        display: inline-block;
+        padding: 6px 12px;
+        margin: 4px 6px 4px 0;
+        background-color: #f7c6d4;
+        color: #1c1418;
+        border-radius: 20px;
+        font-size: 0.9rem;
+    }
+    .btn-pink-custom {
+        background-color: #e8a5b4;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.2s ease-in-out;
+    }
+
+        .btn-pink-custom:hover {
+            background-color: #f3bcc9; 
+            color: white;
+            text-decoration: none;
+        }
+    .flower-card {
+        background-color: #fffafc;
+        border: 1px solid #f3dce1;
+        border-radius: 12px;
+        padding: 2rem;
+    }
+
+    .flower-btn {
+        background-color: #e8a5b4;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+        .flower-btn:hover {
+            background-color: #f3b8c5;
+        }
+
+    .divider {
+        border-top: 1px solid #f3dce1;
+        margin: 2rem 0 1rem 0;
+    }
+
+    
+    .nazad-btn {
+        background-color: #e8a5b4;
+        color: white;
+        font-size: 16px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .nazad-btn:hover {
+        background-color: #f2bdc7;
+        color: white;
+    }
+
+
+</style>

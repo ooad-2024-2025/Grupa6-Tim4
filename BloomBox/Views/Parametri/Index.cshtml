@@ -1,0 +1,146 @@
+﻿@model IEnumerable<BloomBox.Models.Parametri>
+
+@{
+    ViewData["Title"] = "Izbor parametara";
+}
+
+@if (User.IsInRole("Administrator") || User.IsInRole("Radnik"))
+{
+    <div>
+        <a asp-controller="Parametri" asp-action="Create" class="btn btn-primary">Dodaj parametar</a>
+    </div>
+}
+<h1>Odaberi parametre</h1>
+
+<div class="row">
+    <!-- Left side: Parametri as filter chips -->
+    <div class="col-md-6">
+        <form asp-action="PronadjiProizvod" method="post" class="d-flex flex-wrap gap-3 mb-4">
+            @foreach (var param in Model)
+            {
+                <div class="chip">
+                    <input type="checkbox"
+                           name="izabraniParametri"
+                           value="@param.parametarId"
+                           id="param_@param.parametarId"
+                           class="chip-checkbox" />
+                    <label for="param_@param.parametarId" class="chip-label">@param.ime</label>
+                </div>
+            }
+
+            <div>
+                <button type="submit" class="btn-nastavi mt-4">Nastavi</button>
+            </div>
+        </form>
+        
+
+        @if (ViewBag.Greska != null)
+        {
+            <div class="alert alert-warning mt-3">
+                @ViewBag.Greska
+            </div>
+        }
+    </div>
+
+    <!-- Right side: Preporučeni proizvod -->
+    <div class="col-md-6">
+        @if (ViewBag.preporuceno != null)
+        {
+            var proizvod = ViewBag.preporuceno as BloomBox.Models.Proizvod;
+            <a asp-controller="Proizvod" asp-action="Details" asp-route-id="@proizvod.proizvodId" class="product-link">
+                <div class="product-card">
+                    <img src="@proizvod.slikaURL" alt="Slika" class="product-image" />
+                    <div class="product-name">@proizvod.ime</div>
+                </div>
+            </a>
+        }
+    </div>
+</div>
+
+<style>
+    /* Bigger pink filter chips */
+    .chip {
+        position: relative;
+    }
+
+    .chip-checkbox {
+        display: none;
+    }
+
+    .chip-label {
+        display: inline-block;
+        padding: 14px 26px;
+        font-size: 1.1rem;
+        border-radius: 30px;
+        background-color: #f4c2d7;
+        color: #000;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: background-color 0.2s ease-in-out, color 0.2s;
+    }
+
+    .chip-checkbox:checked + .chip-label {
+        background-color: #e08cb3;
+        color: white;
+    }
+
+    .chip-label:hover {
+        background-color: #f0a7c8;
+    }
+
+    
+    .btn-nastavi {
+        max-width: auto;
+        background-color: #1c1418;
+        color: white;
+        padding: 12px 24px;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 6px;
+        transition: background-color 0.2s ease;
+    }
+
+        .btn-nastavi:hover {
+            background-color: #3a2b31;
+        }
+
+        .btn-nastavi:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+    
+    .product-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .product-card {
+        max-width: 360px;
+        margin: auto;
+        border: 1px solid #ccc;
+        padding: 15px;
+        background-color: #f9f9f9;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+        .product-card:hover {
+            transform: scale(1.02);
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+    .product-image {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 6px;
+    }
+
+    .product-name {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+</style>

@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Dodaj parametre";
+    var parametri = ViewBag.Parametri as List<BloomBox.Models.Parametri>;
+    var proizvodId = ViewBag.ProizvodId;
+}
+
+<h2>Dodaj parametre proizvodu</h2>
+
+<form asp-action="DodajParametre" method="post">
+    <input type="hidden" name="proizvodId" value="@proizvodId" />
+
+    @foreach (var p in parametri)
+    {
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="izabraniParametri" value="@p.parametarId" id="param_@p.parametarId" />
+            <label class="form-check-label" for="param_@p.parametarId">@p.ime</label>
+        </div>
+    }
+
+    <button type="submit" class="btn btn-dark mt-3">Dodaj parametre</button>
+</form>

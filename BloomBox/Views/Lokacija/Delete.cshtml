@@ -1,0 +1,48 @@
+﻿@model BloomBox.Models.Lokacija
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+<h3>Jeste li sigurni da želite obrisati ovu lokaciju?</h3>
+<div>
+    <h4>Lokacija</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Adresa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Adresa)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Grad)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Grad)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GeografskaSirina)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GeografskaSirina)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GeografskaDuzina)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GeografskaDuzina)
+        </dd>
+    </dl>
+    @if (User.IsInRole("Administrator"))
+    {
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="lokacijaId" />
+            <input type="submit" value="Obriši" class="btn btn-danger" /> |
+            <a asp-action="Index">Nazad na listu lokacija</a>
+        </form>
+    }
+</div>
+
+
